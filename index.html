@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IRONVEST | Marketing Digital</title>
+<title>IRONVEST | Marketing Digital & Criação de Sites</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -78,37 +78,25 @@ color:#D4AF37;
 /* HERO */
 
 .hero{
-
 min-height:100vh;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 text-align:center;
-
 padding:120px 30px;
-
 background:
 linear-gradient(
 rgba(0,0,0,.75),
 rgba(0,0,0,.85)
 ),
 url('https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1600&q=80');
-
 background-size:cover;
 background-position:center;
-
 }
 
 .hero-content{
 max-width:900px;
 animation:fadeUp 1s ease;
-}
-
-.hero img{
-width:180px;
-margin-bottom:20px;
 }
 
 .hero h1{
@@ -135,6 +123,9 @@ border-radius:12px;
 font-weight:700;
 text-decoration:none;
 transition:.3s;
+cursor: pointer;
+border: none;
+text-align: center;
 }
 
 .btn-primary{
@@ -145,6 +136,7 @@ color:black;
 .btn-outline{
 border:1px solid #D4AF37;
 color:white;
+background: transparent;
 }
 
 .btn:hover{
@@ -201,6 +193,7 @@ padding:100px 8%;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
+margin-bottom: 50px;
 }
 
 .card{
@@ -226,6 +219,51 @@ margin-bottom:15px;
 color:#ccc;
 margin-bottom:20px;
 line-height:1.7;
+}
+
+/* FORMULÁRIO DE ORÇAMENTO */
+
+.form-container {
+background: rgba(255,255,255,.03);
+border: 1px solid rgba(212,175,55,.2);
+padding: 40px;
+border-radius: 25px;
+max-width: 600px;
+margin: 0 auto;
+backdrop-filter: blur(10px);
+}
+
+.form-container h3 {
+color: #D4AF37;
+text-align: center;
+margin-bottom: 25px;
+font-size: 1.8rem;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 8px;
+color: #ddd;
+font-size: 14px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+width: 100%;
+padding: 14px;
+background: #111;
+border: 1px solid rgba(212,175,55,.2);
+color: white;
+border-radius: 10px;
+font-size: 15px;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+outline: none;
+border-color: #D4AF37;
 }
 
 /* BENEFICIOS */
@@ -285,18 +323,14 @@ color:#ddd;
 /* CTA */
 
 .cta{
-
 padding:120px 8%;
-
 text-align:center;
-
 background:
 linear-gradient(
 135deg,
 rgba(212,175,55,.08),
 rgba(0,0,0,.9)
 );
-
 }
 
 .cta h2{
@@ -312,6 +346,140 @@ color:#ccc;
 line-height:1.8;
 }
 
+/* ÁREA DE LOGIN DISCRETA E PAINEL */
+
+.admin-trigger-zone {
+text-align: center;
+padding: 15px;
+background: transparent;
+}
+
+.btn-admin-trigger {
+background: transparent;
+border: none;
+color: #111; /* Cor escura para camuflar com o fundo preto */
+font-size: 12px;
+cursor: pointer;
+text-decoration: none;
+padding: 10px 20px;
+}
+
+.modal-admin {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.95);
+z-index: 2000;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+
+.login-box {
+background: #111;
+padding: 40px;
+border-radius: 20px;
+border: 1px solid #D4AF37;
+width: 100%;
+max-width: 400px;
+text-align: center;
+}
+
+.login-box h3 {
+color: #D4AF37;
+margin-bottom: 20px;
+}
+
+.login-box input {
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+background: #222;
+border: 1px solid rgba(212,175,55,.3);
+color: white;
+border-radius: 8px;
+}
+
+.dashboard-box {
+display: none;
+background: #111;
+padding: 40px;
+border-radius: 20px;
+border: 1px solid #D4AF37;
+width: 100%;
+max-width: 800px;
+max-height: 80vh;
+overflow-y: auto;
+}
+
+.dashboard-box h3 {
+color: #D4AF37;
+margin-bottom: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.solicitacao-card {
+background: rgba(255,255,255,0.05);
+padding: 20px;
+border-radius: 12px;
+margin-bottom: 15px;
+text-align: left;
+border-left: 4px solid #D4AF37;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.solicitacao-info {
+flex: 1;
+min-width: 250px;
+}
+
+.solicitacao-card p {
+margin-bottom: 5px;
+font-size: 14px;
+}
+
+.btn-wpp-retorno {
+background: #25D366;
+color: white;
+padding: 10px 20px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+font-size: 14px;
+transition: .3s;
+display: inline-flex;
+align-items: center;
+gap: 8px;
+}
+
+.btn-wpp-retorno:hover {
+background: #1ebd59;
+transform: translateY(-2px);
+}
+
+.close-admin {
+background: transparent;
+color: #ff4444;
+border: none;
+cursor: pointer;
+font-weight: bold;
+}
+
+.no-data {
+text-align: center;
+color: #888;
+padding: 30px;
+}
+
 /* FOOTER */
 
 footer{
@@ -321,56 +489,77 @@ border-top:1px solid rgba(212,175,55,.15);
 color:#888;
 }
 
-/* INSTAGRAM FLOAT */
+/* INSTAGRAM / WHATSAPP FLOAT */
 
-.instagram{
-position:fixed;
-right:25px;
-bottom:25px;
-width:65px;
-height:65px;
-border-radius:50%;
-background:#D4AF37;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-text-decoration:none;
-color:black;
-box-shadow:0 0 25px rgba(212,175,55,.4);
-z-index:999;
+.float-buttons {
+position: fixed;
+right: 25px;
+bottom: 25px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+z-index: 999;
+}
+
+.float-btn {
+width: 65px;
+height: 65px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+text-decoration: none;
+box-shadow: 0 0 25px rgba(212,175,55,.4);
+transition: .3s;
+}
+
+.float-btn:hover {
+transform: scale(1.1);
+}
+
+.instagram {
+background: #D4AF37;
+color: black;
+}
+
+.whatsapp {
+background: #25D366;
+color: white;
+box-shadow: 0 0 25px rgba(37, 211, 102, 0.4);
 }
 
 /* ANIMAÇÃO */
 
 @keyframes fadeUp{
-
 from{
 opacity:0;
 transform:translateY(50px);
 }
-
 to{
 opacity:1;
 transform:translateY(0);
 }
-
 }
 
 @media(max-width:768px){
-
 .hero h1{
 font-size:2.6rem;
 }
-
 nav ul{
 display:none;
 }
-
 .section-title{
 font-size:2rem;
 }
-
+.solicitacao-card {
+flex-direction: column;
+align-items: flex-start;
+}
+.btn-wpp-retorno {
+width: 100%;
+justify-content: center;
+}
 }
 
 </style>
@@ -378,203 +567,288 @@ font-size:2rem;
 <body>
 
 <nav>
-
 <div class="logo">IRONVEST</div>
-
 <ul>
 <li><a href="#produtos">Produtos</a></li>
+<li><a href="#orcamento">Fazer Site</a></li>
 <li><a href="#beneficios">Benefícios</a></li>
 <li><a href="#sobre">Sobre</a></li>
 </ul>
-
 </nav>
 
 <section class="hero">
-
 <div class="hero-content">
-
 <h1>
 Transforme Conhecimento em
 <span>Renda Online</span>
 </h1>
-
 <p>
-Aprenda marketing digital, vendas online e estratégias para criar novas oportunidades usando apenas internet e dedicação.
+Aprenda marketing digital, vendas online, e faça seu site profissional com estratégias sob medida para alavancar seu negócio.
 </p>
-
 <a href="#produtos" class="btn btn-primary">
 VER PRODUTOS
 </a>
-
-<a href="https://www.instagram.com/_iron_vest_?igsh=MW5mZjV1c2w0c3M2cQ==" class="btn btn-outline" target="_blank">
-INSTAGRAM
+<a href="#orcamento" class="btn btn-outline">
+SOLICITAR SITE PROFISSIONAL
 </a>
-
 </div>
-
 </section>
 
 <section class="stats">
-
 <div class="stat">
 <h2>4+</h2>
 <p>E-books Digitais</p>
 </div>
-
 <div class="stat">
 <h2>100%</h2>
 <p>Acesso Online</p>
 </div>
-
 <div class="stat">
 <h2>24h</h2>
 <p>Liberação Imediata</p>
 </div>
-
 <div class="stat">
 <h2>∞</h2>
-<p>Conhecimento</p>
+<p>Conhecimento & Código</p>
 </div>
-
 </section>
 
 <section id="produtos" class="produtos">
-
-<h2 class="section-title">Produtos Digitais</h2>
-
+<h2 class="section-title">Produtos & Serviços</h2>
 <div class="cards">
-
 <div class="card">
 <h3>📘 Como Fazer Dinheiro na Internet</h3>
 <p>Estratégias simples para começar do zero.</p>
 <a href="https://pay.sunize.com.br/ZXvqbvuO" target="_blank" class="btn btn-primary">Comprar</a>
 </div>
-
 <div class="card">
 <h3>📈 Como Aumentar Suas Vendas</h3>
 <p>Métodos para melhorar seus resultados.</p>
 <a href="https://pay.sunize.com.br/ducdWXWn" target="_blank" class="btn btn-primary">Comprar</a>
 </div>
-
 <div class="card">
-<h3>💰 A Máquina do Dinheiro</h3>
-<p>Aprenda princípios para construir renda online.</p>
-<a href="https://pay.sunize.com.br/doFMLkSS" target="_blank" class="btn btn-primary">Comprar</a>
+<h3>💻 Criação de Sites Profissionais</h3>
+<p>Tenha uma Landing Page ou site institucional de alto padrão focado em conversões.</p>
+<a href="#orcamento" class="btn btn-primary">Pedir Orçamento</a>
 </div>
-
 <div class="card">
 <h3>🧠 Mentalidade Financeira</h3>
 <p>Estratégias para crescer financeiramente.</p>
 <a href="https://pay.sunize.com.br/tLNFczkG" target="_blank" class="btn btn-primary">Comprar</a>
 </div>
-
 </div>
 
+<div id="orcamento" class="form-container">
+    <h3>Solicite seu Site Profissional</h3>
+    <form id="siteForm" onsubmit="enviarFormulario(event)">
+        <div class="form-group">
+            <label for="nomeCliente">Seu Nome / Nome da Empresa</label>
+            <input type="text" id="nomeCliente" required placeholder="Ex: Guilherme Silva">
+        </div>
+        <div class="form-group">
+            <label for="wppCliente">Número do WhatsApp (com DDD)</label>
+            <input type="tel" id="wppCliente" required placeholder="Ex: 11999998888" pattern="[0-9]+">
+        </div>
+        <div class="form-group">
+            <label for="tipoSite">Tipo de Projeto</label>
+            <select id="tipoSite" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Landing Page (Página de Vendas)">Landing Page (Página de Vendas)</option>
+                <option value="Site Institucional">Site Institucional (Empresas)</option>
+                <option value="Portfólio / Link na Bio">Portfólio / Link na Bio</option>
+                <option value="Outro Modelo">Outro Modelo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="detalhesProjeto">Fale brevemente sobre o seu negócio</label>
+            <textarea id="detalhesProjeto" rows="4" placeholder="O que você vende ou faz?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin: 10px 0 0 0;">ENVIAR SOLICITAÇÃO</button>
+    </form>
+</div>
 </section>
 
 <section id="beneficios" class="beneficios">
-
-<h2 class="section-title">
-O Que Você Vai Conquistar
-</h2>
-
+<h2 class="section-title">O Que Você Vai Conquistar</h2>
 <p class="section-sub">
-Não se trata apenas de aprender marketing digital. Trata-se de desenvolver habilidades que podem abrir novas oportunidades.
+Não se trata apenas de aprender marketing digital. Trata-se de desenvolver habilidades e ter as ferramentas certas na internet.
 </p>
-
 <div class="benef-grid">
-
 <div class="benef">
 <div class="icon">💰</div>
 <h3>Criar Nova Fonte de Renda</h3>
 <p>Aprenda formas práticas de usar a internet para gerar oportunidades financeiras.</p>
 </div>
-
 <div class="benef">
-<div class="icon">📱</div>
-<h3>Usar Redes Sociais Com Estratégia</h3>
-<p>Transforme atenção em oportunidade através do conteúdo.</p>
+<div class="icon">🌐</div>
+<h3>Presença Web Profissional</h3>
+<p>Seus clientes em potencial encontrarão um site rápido, elegante e focado em conversão.</p>
 </div>
-
 <div class="benef">
 <div class="icon">🚀</div>
 <h3>Evitar Erros Comuns</h3>
-<p>Aprenda caminhos mais eficientes e evite perder tempo.</p>
+<p>Aprenda caminos mais eficientes e evite perder tempo.</p>
 </div>
-
 <div class="benef">
 <div class="icon">🎯</div>
 <h3>Aplicação Imediata</h3>
 <p>Estratégias simples que podem ser colocadas em prática rapidamente.</p>
 </div>
-
 <div class="benef">
 <div class="icon">📈</div>
 <h3>Habilidades Valiosas</h3>
 <p>Marketing, vendas, comunicação e criação de conteúdo.</p>
 </div>
-
 <div class="benef">
 <div class="icon">🧠</div>
 <h3>Mentalidade de Crescimento</h3>
 <p>Mais foco, organização e visão de longo prazo.</p>
 </div>
-
 </div>
-
 </section>
 
 <section id="sobre" class="sobre">
-
 <h2 class="section-title">Sobre a IronVest</h2>
-
 <p>
-
-<strong>Guilherme | Infoprodutor</strong>
-
+<strong>Guilherme | Infoprodutor & Desenvolvedor Web</strong>
 <br><br>
-
-A IronVest foi criada para ajudar pessoas a desenvolver habilidades digitais, aprender marketing digital e construir novas oportunidades através da internet.
-
+A IronVest foi criada para ajudar pessoas a desenvolver habilidades digitais, aprender marketing e agora conta também com soluções em desenvolvimento de sites profissionais para o seu negócio decolar.
 </p>
-
 </section>
 
 <section class="cta">
-
-<h2>
-Você pode continuar apenas assistindo outras pessoas crescerem...
-</h2>
-
-<p>
-
-Ou começar hoje a construir seu próprio caminho.
-
-</p>
-
-<a href="https://linktr.ee/IronVest"
-target="_blank"
-class="btn btn-primary">
-
-QUERO COMEÇAR AGORA
-
-</a>
-
+<h2>Você pode continuar apenas assistindo outras pessoas crescerem...</h2>
+<p>Ou começar hoje a construir seu próprio caminho e colocar sua estrutura profissional no ar.</p>
+<a href="https://linktr.ee/IronVest" target="_blank" class="btn btn-primary">QUERO COMEÇAR AGORA</a>
 </section>
 
+<div class="admin-trigger-zone">
+    <button class="btn-admin-trigger" onclick="openAdminModal()">Painel Restrito</button>
+</div>
+
 <footer>
-
 © 2026 IRONVEST — Todos os direitos reservados
-
 </footer>
 
-<a class="instagram"
-href="https://www.instagram.com/_iron_vest_?igsh=MW5mZjV1c2w0c3M2cQ=="
-target="_blank">
+<div class="float-buttons">
+    <a class="float-btn whatsapp" href="https://wa.me/qr/5CAW2PHWRCIOF1" target="_blank">💬</a>
+    <a class="float-btn instagram" href="https://www.instagram.com/_iron_vest_?igsh=MW5mZjV1c2w0c3M2cQ==" target="_blank">📱</a>
+</div>
 
-📱
+<div id="adminModal" class="modal-admin">
+    
+    <div id="loginBox" class="login-box">
+        <h3>Acesso Interno IronVest</h3>
+        <input type="text" id="username" placeholder="Usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button class="btn btn-primary" style="width:100%; margin:10px 0;" onclick="tryLogin()">Entrar</button>
+        <button class="close-admin" onclick="closeAdminModal()">Cancelar</button>
+    </div>
 
-</a>
+    <div id="dashboardBox" class="dashboard-box">
+        <h3>
+            <span>📥 Leads e Pedidos de Sites</span>
+            <button class="close-admin" onclick="closeAdminModal()">Sair</button>
+        </h3>
+        
+        <div id="listaSolicitacoes">
+            </div>
+    </div>
+
+</div>
+
+<script>
+// Função para carregar e exibir as solicitações salvas
+function renderizarSolicitacoes() {
+    const lista = document.getElementById('listaSolicitacoes');
+    const dadosSalvos = localStorage.getItem('leadsIronVest');
+    const solicitacoes = dadosSalvos ? JSON.parse(dadosSalvos) : [];
+
+    if (solicitacoes.length === 0) {
+        lista.innerHTML = '<div class="no-data">Nenhuma solicitação recebida até o momento.</div>';
+        return;
+    }
+
+    lista.innerHTML = '';
+    solicitacoes.reverse().forEach(item => {
+        const textoWpp = encodeURIComponent(`Olá ${item.nome}, vi que você solicitou um orçamento para ${item.tipo} na IronVest. Vamos conversar sobre seu projeto?`);
+        const linkWhatsapp = `https://wa.me/${item.whatsapp}?text=${textoWpp}`;
+
+        lista.innerHTML += `
+            <div class="solicitacao-card">
+                <div class="solicitacao-info">
+                    <strong>👤 ${item.nome}</strong>
+                    <p>💼 <b>Tipo:</b> ${item.tipo}</p>
+                    <p>📝 <b>Detalhes:</b> ${item.detalhes || 'Não informado'}</p>
+                    <p>📅 <b>Data:</b> ${item.data}</p>
+                </div>
+                <div>
+                    <a href="${linkWhatsapp}" target="_blank" class="btn-wpp-retorno">
+                        💬 Chamar no Whats
+                    </a>
+                </div>
+            </div>
+        `;
+    });
+}
+
+// Envio do formulário público
+function enviarFormulario(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('nomeCliente').value;
+    let whatsapp = document.getElementById('wppCliente').value.replace(/\D/g, '');
+    const tipo = document.getElementById('tipoSite').value;
+    const detalhes = document.getElementById('detalhesProjeto').value;
+    
+    if (whatsapp.length === 11 || whatsapp.length === 10) {
+        whatsapp = '55' + whatsapp;
+    }
+
+    const novaSolicitacao = {
+        nome,
+        whatsapp,
+        tipo,
+        detalhes,
+        data: new Date().toLocaleDateString('pt-BR') + ' às ' + new Date().toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'})
+    };
+
+    const dadosSalvos = localStorage.getItem('leadsIronVest');
+    const listaAtual = dadosSalvos ? JSON.parse(dadosSalvos) : [];
+    listaAtual.push(novaSolicitacao);
+    localStorage.setItem('leadsIronVest', JSON.stringify(listaAtual));
+
+    alert('Sucesso! Suas informações foram enviadas corretamente. Em breve entrarei em contato.');
+    document.getElementById('siteForm').reset();
+}
+
+// Funções de controle do Painel Administrativo
+function openAdminModal() {
+    document.getElementById('adminModal').style.display = 'flex';
+    document.getElementById('loginBox').style.display = 'block';
+    document.getElementById('dashboardBox').style.display = 'none';
+}
+
+// Fecha o modal limpando os campos
+function closeAdminModal() {
+    document.getElementById('adminModal').style.display = 'none';
+    document.getElementById('username').value = '';
+    document.getElementById('password').value = '';
+}
+
+function tryLogin() {
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+
+    if(user === 'admin' && pass === 'admin') {
+        document.getElementById('loginBox').style.display = 'none';
+        document.getElementById('dashboardBox').style.display = 'block';
+        renderizarSolicitacoes();
+    } else {
+        alert('Usuário ou senha incorretos!');
+    }
+}
+</script>
 
 </body>
 </html>
