@@ -748,28 +748,32 @@ SOLICITAR SITE PROFISSIONAL
 </div>
 </div>
 </section>
-
 <section id="orcamento" class="criacao-sites-section">
 <div class="form-container">
     <h2>💻 Criação de Sites Profissionais</h2>
     <p class="desc-servico">Desenvolvimento sob medida de Landing Pages de alta conversão e sites institucionais estruturados com design premium focado em transformar visitantes em clientes compradores. Preencha os dados abaixo para iniciar seu projeto.</p>
     
-    <form id="siteForm" onsubmit="enviarFormulario(event)">
+    <form action="https://formsubmit.co/ironvest12@gmail.com" method="POST">
+        
+        <input type="hidden" name="_next" value="https://ironvest-ofc.github.io">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="🚀 Novo Lead - Solicitação de Site IronVest">
+
         <div class="form-group">
             <label for="nomeCliente">Seu Nome / Nome da Empresa</label>
-            <input type="text" id="nomeCliente" required placeholder="Ex: Guilherme Silva">
+            <input type="text" name="Nome do Cliente" id="nomeCliente" required placeholder="Ex: Guilherme Silva">
         </div>
         <div class="form-group">
             <label for="wppCliente">Número do WhatsApp (com DDD)</label>
-            <input type="tel" id="wppCliente" required placeholder="Ex: 11999998888" pattern="[0-9]+">
+            <input type="tel" name="WhatsApp" id="wppCliente" required placeholder="Ex: 11999998888" pattern="[0-9]+">
         </div>
         <div class="form-group">
             <label for="instaCliente">Perfil do Instagram (Opcional)</label>
-            <input type="text" id="instaCliente" placeholder="Ex: @seu.negocio">
+            <input type="text" name="Instagram" id="instaCliente" placeholder="Ex: @seu.negocio">
         </div>
         <div class="form-group">
             <label for="modeloVenda">Onde você vende atualmente?</label>
-            <select id="modeloVenda" required>
+            <select name="Onde vende atualmente" id="modeloVenda" required>
                 <option value="" disabled selected>Selecione uma opção</option>
                 <option value="Loja Física / Estabelecimento Comercial">Loja Física / Estabelecimento Comercial</option>
                 <option value="Plataforma de Infoprodutos (Kiwify, Sunize, Hotmart, etc)">Plataforma de Infoprodutos (Kiwify, Sunize, etc)</option>
@@ -780,7 +784,7 @@ SOLICITAR SITE PROFISSIONAL
         </div>
         <div class="form-group">
             <label for="tipoSite">Tipo de Projeto Desejado</label>
-            <select id="tipoSite" required>
+            <select name="Tipo de Projeto" id="tipoSite" required>
                 <option value="" disabled selected>Selecione uma opção</option>
                 <option value="Landing Page (Página de Vendas)">Landing Page (Página de Vendas)</option>
                 <option value="Site Institucional">Site Institucional (Empresas)</option>
@@ -790,12 +794,14 @@ SOLICITAR SITE PROFISSIONAL
         </div>
         <div class="form-group">
             <label for="detalhesProjeto">Fale brevemente sobre o seu negócio</label>
-            <textarea id="detalhesProjeto" rows="4" placeholder="O que você vende ou faz?"></textarea>
+            <textarea name="Detalhes do Negócio" id="detalhesProjeto" rows="4" placeholder="O que você vende ou faz?"></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="width: 100%; margin: 10px 0 0 0;">ENVIAR SOLICITAÇÃO</button>
     </form>
 </div>
 </section>
+    
+
 
 <section id="depoimentos" class="avaliacoes-section">
     <h2 class="section-title">O que dizem nossos clientes</h2>
